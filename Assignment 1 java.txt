@@ -1,0 +1,368 @@
+Q1.
+ public class HelloWorld
+{
+
+     
+public static void main(String []args)
+{
+        System.out.println("Hello");
+     
+   System.out.println("Sudeepa");
+    
+ }
+
+}
+
+Q.2 Wap to swap two numbers
+
+class helloworld
+{
+public static void main (String args[])
+{
+int a=10;
+int b=20;
+System.out.println("A="+a +"B=" +b);
+int temp=a;
+a=b;
+b=temp;
+System.out.println("A="+a +"B=" +b);
+System.out.println("welcome to java World");
+}
+}
+
+Q.3 How to swap two numbers without using a third variable? 
+
+class helloworld
+{
+	public static void main (String args[])
+	{
+	int a=10;
+	int b=20;
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	System.out.println("a=" +a +"b=" +b);
+	System.out.println("welcome to java World");
+	}	
+}
+
+Q.4 Wap to check is number is even or odd.
+
+public static void main (String args[])
+	{
+		int a=12;
+		if (a%2==0) 
+			System.out.println("even Number");
+		
+		else 
+			System.out.println("odd Number");
+		
+}
+}
+
+Q.5 Wap to print fibonaci series .
+
+public static void main(String[] args) {
+        int num1=0;
+        int num2=1;
+        int sum;
+        int total=15;
+        System.out.println("The Fibonacci Series is");
+        System.out.print(num1);
+        for(int i=1;i<total;i++)
+        {
+            
+            sum=num1+num2;
+            
+            System.out.print(" ,"+num2);
+            num1=num2;
+            num2=sum;
+    }
+    }
+}
+
+Q.6 Wap to check value is within range or not
+
+
+class helloworld{
+	 
+		public static void main (String args[]) {
+			int value=10;
+		if(value>=10 && value<=90) {
+			System.out.println("WithIn Range");
+		}
+		else {
+			System.out.println("OutOf Range");
+		}
+		}
+Q.7 A school has following rules for grading system:
+ a. Below 25 - F
+ b. 25 to 45 - E
+ c. 45 to 50 - D
+ d. 50 to 60 - C
+ e. 60 to 80 - B
+ f. Above 80 - A
+ Ask user to enter marks and print the corresponding grade.
+
+Q.8 Take values of length and breadth of a rectangle from user and check if it is square or not.
+ hint is length==breath square else rectangle 
+
+class helloworld{
+	public static void main (String args[]) {
+                       int length=10;
+                       int breath=11;
+	if(length==breath) {
+		System.out.println("Its Square");
+	}
+	else {
+		System.out.println("its rectangle");
+	}
+	}
+Q.9 check and print greater number among two numbers.
+
+class helloworld{
+	public static void main (String args[])
+	{
+	int a=50;
+	int b=20;
+	if(a>b) {
+	System.out.println("Print Greater");
+	}
+	else {
+	System.out.println("Print its not Greater");
+	}
+	}
+}
+
+Q.10 check and print greater number among three numbers 
+
+class helloworld{
+	public static void main (String args[])
+	{
+	int a=10;
+	int b=50;
+	int c=30;
+	if(a>b){
+	System.out.println("Print Greater"+a);
+	}
+	else if(b>c){
+	System.out.println("Print Greater"+b);
+	}
+	else{
+	System.out.println("Print Greater"+c);
+	}
+	}
+}
+
+Q.11 Q 11 Write a program to print absolute vlaue of a number entered by user. E.g.-
+ INPUT:  1        OUTPUT: 1
+ INPUT: -1        OUTPUT: 1
+
+ Hint x<0  (-1*x) else x
+
+ public static void main(String[] args) 
+    
+  
+  {
+        int num;
+       
+ Scanner sc=new Scanner(System.in);
+       
+         num=sc.nextInt();
+
+       
+ System.out.println("Enter any number");
+        
+      
+      if(num<0)
+      
+    {
+            System.out.println("Absolute number is "+num*-1);
+     
+   }
+      
+  else
+      
+  {
+            System.out.println("Absolute number is "+num);
+      
+  }
+
+   
+ }
+
+
+
+Q.12 check alphabet is in lower case (a-z)(97-122) or upper case (A-Z)(65-90)
+
+public static void main(String[] args) {
+        System.out.println("Enter the alphabet");
+        Scanner sc=new Scanner(System.in);
+        char alphabet=sc.next().charAt(0);
+        if(alphabet>=65&&alphabet<=90)
+        {
+            System.out.println("Alphabet is in upper case");
+        }
+        else if(alphabet>=97&&alphabet<=122)
+        {
+            System.out.println("Alphabet is in lower case");
+        }
+        
+    }
+}
+
+
+Q.13 print the expression and see the output 
+ If
+  x = 2
+  y = 5
+  z = 0
+  then find values of the following expressions:
+  a. x == 2
+  b. x != 5
+  c. x != 5 && y >= 5
+  d. z != 0 || x == 2
+  e. !(y < 10)
+
+ public static void main(String[] args) 
+    {
+        int x = 2;
+        int y = 5;
+        int z = 0;
+        System.out.println(x==2);
+        System.out.println(x != 5);
+        System.out.println(x != 5 && y >= 5);
+        System.out.println(z != 0 || x == 2);
+        System.out.println(!(y < 10));
+
+        
+    }
+}
+
+
+
+Q.14 Check if a given number is leap year or not 
+
+  Leap Year contains 366 days, which comes once every four years. Every leap year corresponds to these facts : 
+
+  A century year is a year ending with 00. A century year is a leap year only if it is divisible by 400.
+  A leap year (except a century year) can be identified if it is exactly divisible by 4.
+  A century year should be divisible by 4 and 100 both.
+  A non-century year should be divisible only by 4.
+
+import java.util.Scanner;
+
+public class Main{
+	
+public static void main(String[] args) 
+{
+      
+  System.out.println("Enter the Year");
+       
+ Scanner sc=new Scanner(System.in);
+       
+ int year=sc.nextInt();
+      
+ if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+        
+{
+            System.out.println("Year is leap year");
+       
+ }
+       
+ else
+      
+  {
+            System.out.println("Year is not leap year");
+       
+ }
+    
+}
+
+}
+
+
+Q.15  wap to calculate simple interest Simple Interest = (P x T x R)/100
+ Where,
+  P is the principle amount
+  T is the time and
+  R is the rate
+
+import java.util.Scanner;
+
+public class Main{
+	
+public static void main(String[] args) 
+{
+       
+ Scanner sc1=new Scanner(System.in);
+      
+  System.out.println("Enter Priciple amount");
+    
+    int P=sc1.nextInt();
+        
+Scanner sc2=new Scanner(System.in);
+       
+ System.out.println("Enter duration in year");
+      
+  int T=sc2.nextInt();
+      
+  Scanner sc3=new Scanner(System.in);
+      
+  System.out.println("Enter rate of interest");
+      
+  int R=sc3.nextInt();
+     
+   int SI;
+       
+ SI=(P *T * R)/100;
+        
+System.out.println("Simple interest is "+SI);
+    
+}
+}
+
+
+Q.16 Wap to print perimeter of rectengle Perimeter of rectangle ABCD = 2A + 2B = 2(A+B)
+
+public static void main(String[] args) {
+    System.out.println("Enter the length of Rectangle");   
+    Scanner sc1=new Scanner(System.in);
+    int length=sc1.nextInt();
+    System.out.println("Enter the height of Rectangle");   
+    Scanner sc2=new Scanner(System.in);
+    int heigth=sc2.nextInt();
+    int perimeter=2*(length*heigth);
+    System.out.println("Perimeter of rectangle is "+perimeter);
+    
+    }
+}
+
+
+Q 17 Java Program to Check Whether the Character is Vowel or Consonant
+
+ public static void main(String[] args) {
+        System.out.println("Enter the alphabet");
+        Scanner sc=new Scanner(System.in);
+        char alphabet=sc.next().charAt(0);
+        if(alphabet=='a' || alphabet=='A')
+			System.out.println(alphabet+ " is Vowel");
+		else if(alphabet=='e'|| alphabet=='E')
+			System.out.println(alphabet+ " is Vowel");
+		else if(alphabet=='i'|| alphabet=='I')
+			System.out.println(alphabet+ " is Vowel");
+		else if(alphabet=='o'|| alphabet=='O')
+			System.out.println(alphabet+ " is Vowel");
+		else if(alphabet=='u'|| alphabet=='U')
+			System.out.println(alphabet+ " is Vowel");
+		else
+			System.out.println(alphabet+ " is Consonant");
+		
+    }
+}
+
+
+
+
+
+
